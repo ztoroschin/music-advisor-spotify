@@ -12,6 +12,7 @@ public class Commands {
         commands.put("featured", new FeaturedCommand());
         commands.put("categories", new CategoriesCommand());
         commands.put("playlists", new PlaylistsCommand());
+        commands.put("auth", new AuthCommand());
     }
 
     public static Command get(String command) {
