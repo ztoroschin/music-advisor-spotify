@@ -5,7 +5,7 @@ import advisor.Application;
 class PlaylistsCommand extends Command {
 
     @Override
-    public void execute(String[] args) {
+    public void execute(String[] commandArgs, String[] programArgs) {
         if (!Application.isActive()) {
             System.out.println("Please, provide access for application.");
             return;
@@ -14,6 +14,6 @@ class PlaylistsCommand extends Command {
                 "Walk Like A Badass  \n" +
                 "Rage Beats  \n" +
                 "Arab Mood Booster  \n" +
-                "Sunday Stroll\n", args[0].toUpperCase());
+                "Sunday Stroll\n", commandArgs[0].toUpperCase());
     }
 }

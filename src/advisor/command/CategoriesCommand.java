@@ -5,7 +5,7 @@ import advisor.Application;
 class CategoriesCommand extends Command {
 
     @Override
-    public void execute(String[] args) {
+    public void execute(String[] commandArgs, String[] programArgs) {
         if (!Application.isActive()) {
             System.out.println("Please, provide access for application.");
             return;

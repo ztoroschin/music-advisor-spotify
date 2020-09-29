@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Menu {
 
-    public static void show() {
+    public static void show(String[] programArgs) {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
@@ -18,7 +18,7 @@ public class Menu {
                 break;
             }
 
-            Commands.get(command[0]).execute(Arrays.copyOfRange(command, 1, command.length));
+            Commands.get(command[0]).execute(Arrays.copyOfRange(command, 1, command.length), programArgs);
         }
     }
 }
